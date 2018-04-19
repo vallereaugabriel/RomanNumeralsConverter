@@ -1,9 +1,9 @@
-import React, {Component} from "react";
+import * as React from "react";
 
 import convert from "./convert";
 
-class Converter extends Component {
-  state = {value: 'Type here'};
+class Converter extends React.Component {
+  state = {value: ''};
 
   handleChange = (event) => {
     this.setState({value: event.target.value});
